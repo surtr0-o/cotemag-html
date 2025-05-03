@@ -1,0 +1,18 @@
+body{background-color: azure;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    
+}
+body>*{padding-left: 10px;}
+header{background-color:beige;
+margin: 0px;
+padding: 0px;
+border: 1px solid cornflowerblue;
+position: static;
+}
+
+nav{ display: flex;
+
+
+}
