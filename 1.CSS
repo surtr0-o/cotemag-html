@@ -20,4 +20,19 @@ nav{ display: flex;
 footer{
     color: lightgrey;
     background-color: black;    
+    position: static;
+    position-area: under;
+    display: grid;
+
+}
+
+menu{
+    background-color: beige;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid cornflowerblue;
+    position: static;
+    
+    
+
 }
