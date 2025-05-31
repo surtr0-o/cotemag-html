@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+* a {
+    text-decoration: none;
+}
+
+.cabecera {
+    background-color: teal;
+    height: 50px;
+    width: 100%;
+}
+
+.cabecera .menu{
+    height: 100%;
+    width: 100%;
+}
+
+.cabecera .menu .elementos a{
+    color: #FFF;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    line-height: 50px;
+}
+
+.cabecera .menu .elementos li{
+    display: inline-block;
+}
