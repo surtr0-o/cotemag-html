@@ -1,7 +1,15 @@
+:root{
+    --tipografia: Arial, Helvetica, sans-serif;
+    --verde: teal;
+    --verde2: rgb(0, 76, 76);
+    --blanco: #fff;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: var(--tipografia);
 }
 
 * a {
@@ -9,9 +17,10 @@
 }
 
 .cabecera {
-    background-color: teal;
-    height: 50px;
+    background-color: var(--verde);
+    height: 70px;
     width: 100%;
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
 }
 
 .cabecera .menu{
@@ -24,9 +33,65 @@
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
-    line-height: 50px;
+    line-height: 70px;
+    transition: .5s;
+}
+
+.cabecera .menu .elementos a:hover{
+    background-color: var(--verde2);
+    font-size: 30px;
+}
+
+.cabecera .menu .elementos{
+    float: right;
 }
 
 .cabecera .menu .elementos li{
     display: inline-block;
+}
+
+.cabecera .menu .logo{
+    position: absolute;
+    width: 70px;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.cabecera .menu .logo img{
+    width: 70px;
+    transition: .5s;
+}
+
+.cabecera .menu .logo img:hover{
+    width: 100px;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://everwallpaper.com/cdn/shop/files/ring-nubula-wallpaper-mural.jpg?v=1654148245&width=1500);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.hero center #principal{
+    color: var(--blanco);
+    margin-bottom: 50px;
+    font-size: 55px;
+    margin-top: 15%;
+}
+
+.hero center p{
+    width: 400px;
+    font-size: 30px;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.caja{
+    background-color: black;
+    width: 500px;
 }
