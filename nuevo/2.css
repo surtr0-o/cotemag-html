@@ -92,6 +92,8 @@
 }
 
 .caja{
-    background-color: black;
+    background-color: #00000080;
+    border-radius: 10px;
+    padding: 20px;
     width: 500px;
 }
