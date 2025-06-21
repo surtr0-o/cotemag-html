@@ -2,7 +2,9 @@
     --tipografia: Arial, Helvetica, sans-serif;
     --verde: teal;
     --verde2: rgb(0, 76, 76);
+    --verdet: rgba(0, 128, 128, 0.315);
     --blanco: #fff;
+
 }
 
 * {
@@ -17,7 +19,7 @@
 }
 
 .cabecera {
-    background-color: var(--verde);
+    background-color: var(--verdet);
     height: 70px;
     width: 100%;
     box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
@@ -41,6 +43,27 @@
 .cabecera .menu .elementos a:hover{
     background-color: var(--verde2);
     font-size: 30px;
+}
+
+@media(max-width:700px){
+    .cabecera .menu .elementos a{
+        display: none;
+    }
+}
+
+.cabecera .menu .icono{
+    font-size: 25px;
+    color: #FFF;
+    position: absolute;
+    right: 0px;
+    top: 24px;
+    display: none;
+}
+
+@media(max-width:700px){
+    .cabecera .menu .icono{
+        display: block;
+    }
 }
 
 .cabecera .menu .elementos{
@@ -118,6 +141,14 @@
     font-size: 30px;
     text-align: center;
     color: var(--blanco);
+    transition: .3s;
+}
+
+@media(max-width: 700px){
+    .hero center p{
+        font-size: 20px;
+        width: 250px;
+    }
 }
 
 .hero center .caja{
@@ -125,5 +156,14 @@
     border-radius: 10px;
     padding: 20px;
     width: 500px;
+    transition: .3s;
+    
+}
+
+@media(max-width: 700px){
+    .hero center .caja{
+        font-size: 20px;
+        width: 300px;
+    }
 }
 
